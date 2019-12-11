@@ -53,6 +53,10 @@
 		font-size:18px;
 	}
 
+	a:hover {
+		color:white;
+	}
+
 	.clickable:hover {
 	        border: 3px solid white;
 	}
@@ -107,18 +111,46 @@
 
 	.themeFour {
 		position:fixed;
-	        left:73%;
-	        top:68%;
-	        width:18%;
-	        height:25%;
-			padding-top: 12px;
-			padding-left: 13px;
-			padding-right: 13px;
-			padding-bottom: 13px;
-	        background-color:lightblue;
-	        box-shadow: -9px 9px 4px rgb(200, 200, 200);
-	        text-align: center;
-	        overflow:auto;
+        left:73%;
+        top:68%;
+        width:18%;
+        height:25%;
+		padding-top: 12px;
+		padding-left: 13px;
+		padding-right: 13px;
+		padding-bottom: 13px;
+        background-color:lightblue;
+        box-shadow: -9px 9px 4px rgb(200, 200, 200);
+        text-align: center;
+        overflow:auto;
+	}
+
+	.themehead {
+		text-align:center;
+		background-color:rgb(150, 255, 200);
+		padding:10px;
+		margin-top:5%;
+		margin-left:5%;
+	}
+
+	.jumpahead {
+		background-color:white;
+		border-radius:5px;
+		padding:5px; 
+	}
+
+	.sidebar {
+		background-color:lightblue;
+		padding:13px;
+		position:fixed;
+		width:17%;
+		height:100%;
+		margin-top:5%;
+		border-radius:15px;
+	}
+
+	.content {
+		margin-left:22%;
 	}
 
 	#gameButton {
