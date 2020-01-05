@@ -135,8 +135,7 @@
 
 	.jumpahead {
 		background-color:white;
-		border-radius:5px;
-		padding:5px;
+		width:inherit;
 	}
 
 	.sidebar {
@@ -154,8 +153,11 @@
 	}
 
 	.navlink:hover {
-		background-color: rgb(163, 206, 230);
-		color:black; 
+		color:black;
+	}
+
+	.navblock:hover {
+		background-color: rgb(158, 201, 230)
 	}
 
 	.content {
