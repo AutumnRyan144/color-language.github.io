@@ -135,7 +135,8 @@
 
 	.jumpahead {
 		background-color:white;
-		width:inherit;
+		margin:none;
+		padding:5px;
 	}
 
 	.sidebar {
@@ -154,6 +155,11 @@
 
 	.navlink:hover {
 		color:black;
+	}
+
+	.navblock {
+		margin:none;
+		padding:5px;
 	}
 
 	.navblock:hover {
