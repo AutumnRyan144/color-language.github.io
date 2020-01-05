@@ -149,8 +149,17 @@
 		box-shadow: 9px 9px 4px rgb(200, 200, 200);
 	}
 
+	.navlink {
+		text-decoration:none;
+	}
+
+	.navlink:hover {
+		background-color: rgb(163, 206, 230);
+		color:black; 
+	}
+
 	.content {
-		margin-left:22%;
+		margin-left:20%;
 	}
 
 	#gameButton {
