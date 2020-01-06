@@ -24,14 +24,10 @@
 	  box-shadow: -9px 9px 4px rgb(200, 200, 200);
 	}
 
-	h3 {
+	.question {
 	  text-align: center;
 	  color: rgb(100,100,100);
 	  margin-top: 1.5em;
-	}
-
-	#mainBody {
-		background-color:rgb(227, 252, 255);
 	}
 
 	#about {
@@ -79,6 +75,11 @@
 	  box-shadow: -9px 9px 4px rgb(200, 200, 200);
 	  text-align: center;
 	  overflow:auto;
+	}
+
+	#sapirPic {
+		float:left;
+		margin-right:10px;
 	}
 
 	.themeTwo {
@@ -135,6 +136,7 @@
 		padding:10px;
 		margin-top:5%;
 		margin-left:5%;
+		margin-right:5%;
 	}
 
 	.jumpahead {
@@ -173,6 +175,7 @@
 
 	.content {
 		margin-left:20%;
+		margin-right:5%;
 	}
 
 	#gameButton {
