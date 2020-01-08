@@ -3,29 +3,36 @@
 	  font-family: 'Open Sans', sans-serif;
 	}
 
-	#titleBar {
+	.titleBar {
 	  background-color: white;
 	  height: 170px;
+		text-align:center;
 	}
 
-	#whiteSpace {
+	.whiteSpace {
 	  color:white;
 	}
 
-	h1 {
+	.titleButton {
 		color: rgb(255,255,255);
 	  text-align: center;
 	  margin-top: 10px;
-	  margin-left:auto;
-	  margin-right:auto;
+	  margin-left:0 auto;
+		margin-right:0 auto;
 	  width:270px;
 	  padding:10px;
 	  background-color: rgb(2,140,255);
 	  box-shadow: -9px 9px 4px rgb(200, 200, 200);
+		font-size:32px;
+		font-family:inherit;
+		border:none;
+	}
+
+	.titleButton:hover {
+		cursor:pointer;
 	}
 
 	.question {
-	  text-align: center;
 	  color: rgb(100,100,100);
 	  margin-top: 1.5em;
 	}
@@ -182,12 +189,20 @@
 
 	#gameButton {
 		position:fixed;
-	  left:9%;
-	  top:88%;
+	  left:10%;
+	  top:90%;
 	  width:35%;
 	  text-align: center;
+		font-family:inherit;
+		font-size:14px;
 	  padding:10px;
 	  background-color:rgb(178, 252, 255);
+		border:3px solid rgb(110, 210, 255);
 	  border-radius: 20px;
 	  box-shadow: -9px 9px 4px rgb(200, 200, 200);
+	}
+
+	#gameButton:hover {
+		border:3px solid white;
+		cursor:pointer;
 	}
