@@ -167,10 +167,12 @@
 	.navblock {
 		margin:none;
 		padding:5px;
+		border-top: 2px solid rgb(110, 210, 255);
 	}
 
 	.navblock:hover {
 		background-color: rgb(140, 240, 255);
+		box-shadow: 2px 2px 2px white;
 	}
 
 	.content {
