@@ -174,7 +174,8 @@
 	.navblock {
 		margin:none;
 		padding:5px;
-		border-top: 2px solid rgb(110, 210, 255);
+		width: auto;
+		border-top: 2px solid rgb(100, 200, 255);
 	}
 
 	.navblock:hover {
