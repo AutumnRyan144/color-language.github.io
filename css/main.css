@@ -159,6 +159,7 @@
 		width:17%;
 		height:100%;
 		margin-top:5%;
+		left: 0px;
 		box-shadow: 9px 9px 4px rgb(200, 200, 200);
 	}
 
@@ -211,4 +212,23 @@
 	#mapbox {
 		margin-top:5%;
 		text-align:center;
+	}
+
+	.pageFooter {
+		position:fixed;
+		bottom: 0px;
+		right: 0px;
+		left: 17%;
+		padding: 10px;
+		text-align: center;
+		background-color: white;
+		border: 2px solid rgb(100, 200, 255);
+	}
+
+	.middleA {
+		color:rgb(178, 252, 255);
+	}
+
+	#middleAAbout {
+		color:rgb(20, 20, 200);
 	}
