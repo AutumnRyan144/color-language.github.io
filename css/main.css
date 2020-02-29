@@ -1,40 +1,70 @@
 	body {
 		background-color: rgb(230,230,240);
-	  font-family: 'Open Sans', sans-serif;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	#indexTitleBar {
+		background-color: white;
+		height: 170px;
+		text-align: center;
 	}
 
 	.titleBar {
-	  background-color: white;
-	  height: 170px;
-		text-align:center;
+		background-color:white;
+		padding-left:30px;
+		padding-top:10px;
+		height: 100px;
 	}
 
 	.whiteSpace {
 	  color:white;
 	}
 
-	.titleButton {
+	.indexTitleButton {
 		color: rgb(255,255,255);
-	  text-align: center;
-	  margin-top: 10px;
-	  margin-left:0 auto;
+		text-align: center;
+		margin-top: 10px;
+		margin-left:0 auto;
 		margin-right:0 auto;
-	  width:270px;
-	  padding:10px;
-	  background-color: rgb(2,140,255);
-	  box-shadow: -9px 9px 4px rgb(200, 200, 200);
+		width:270px;
+		padding:10px;
+		background-color: rgb(2,140,255);
+		box-shadow: -9px 9px 4px rgb(200, 200, 200);
 		font-size:32px;
 		font-family:inherit;
 		border:none;
+	}
+
+	.titleButton {
+		color: rgb(255,255,255);
+		text-align: center;
+		margin-top: 10px;
+		margin-right:20px;
+		margin-bottom:10px;
+		padding:10px;
+		background-color: rgb(2,140,255);
+		box-shadow: -9px 9px 4px rgb(200, 200, 200);
+		font-size:32px;
+		font-family:inherit;
+		border:none;
+		float:left;
+	}
+
+	.indexTitleButton:hover {
+		cursor:pointer;
 	}
 
 	.titleButton:hover {
 		cursor:pointer;
 	}
 
-	.question {
+	.indexQuestion {
 	  color: rgb(100,100,100);
 	  margin-top: 1.5em;
+	}
+
+	.question {
+		color:rgb(100, 100, 100);
 	}
 
 	#about {
@@ -54,13 +84,13 @@
 		font-size:20px;
 	}
 
-	a {
+	.titleLink {
 		color:black;
 		font-weight:bold;
 		font-size:20px;
 	}
 
-	a:hover {
+	.titleLink:hover {
 		color:white;
 	}
 
@@ -155,16 +185,23 @@
 	.sidebar {
 		background-color: rgb(120, 220, 255);
 		padding:none;
-		position:fixed;
-		width:17%;
-		height:100%;
-		margin-top:5%;
-		left: 0px;
+		position: fixed;
+		width: 22%;
+		height: 100%;
+		left:0px;
+		margin-top: 0px;
 		box-shadow: 9px 9px 4px rgb(200, 200, 200);
+	}
+
+	.content {
+		margin-left: 25%;
 	}
 
 	.navlink {
 		text-decoration:none;
+		color:black;
+		font-weight:bold;
+		font-size:18px;
 		padding:10px;
 	}
 
@@ -182,11 +219,6 @@
 	.navblock:hover {
 		background-color: rgb(140, 240, 255);
 		box-shadow: 2px 2px 2px white;
-	}
-
-	.content {
-		margin-left:20%;
-		margin-right:5%;
 	}
 
 	#gameButton {
@@ -215,11 +247,8 @@
 	}
 
 	.pageFooter {
-		position:fixed;
-		bottom: 0px;
-		right: 0px;
-		left: 17%;
-		padding: 10px;
+		margin-left: 25%;
+		padding: 5px;
 		text-align: center;
 		background-color: white;
 		border: 2px solid rgb(100, 200, 255);
