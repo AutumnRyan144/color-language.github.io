@@ -241,7 +241,7 @@
 		cursor:pointer;
 	}
 
-	#embedbox {
+	.embedbox {
 		margin-top:5%;
 		text-align:center;
 	}
@@ -280,4 +280,12 @@
 	.srcLink:hover {
 		box-shadow: 0px 0px 8px white;
 		border-color:white;
+	}
+
+	#srcList {
+		list-style:none;
+	}
+
+	.srcLi::before {
+		content:"- ";
 	}
