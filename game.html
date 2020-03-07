@@ -5,6 +5,7 @@
 		<title>Chromacuity</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/javascript.css">
 		<link rel="icon" type="image/png" href="favicon.ico">
 	</head>
   <body>
@@ -34,7 +35,6 @@
 		</div>
 
 		<script>
-			var currentScene;
 
 			var gameBox = document.getElementById("gameBox");
 				gameBox.style.textAlign = "center";
@@ -60,22 +60,87 @@
 				gameTitle.style.left = (parseFloat(gameBox.style.width))/2 - (parseFloat(gameTitle.style.width))/2 + "px";
 				gameTitle.style.top = "40px";
 
+			/** Scene 1 Parts**/
+				var instruct = document.createElement("p");
+					instruct.textContent = "Which of the colors below is different from the rest?"
+					instruct.style.paddingTop = "150px";
+				var boxA1 = document.createElement("button");
+					boxA1.className = "colorA";
+					boxA1.style.left = "-30px";
+				var boxA2 = document.createElement("button");
+					boxA2.className = "colorA";
+					boxA2.style.left = "-20px";
+				var boxA3 = document.createElement("button");
+					boxA3.className = "colorA";
+					boxA3.style.left = "-10px";
+				var boxA4 = document.createElement("button");
+					boxA4.className = "colorA";
+					boxA4.style.left = "0px";
+				var boxA5 = document.createElement("button");
+					boxA5.className = "deviantA";
+					boxA5.style.left = "10px";
+				var boxA6 = document.createElement("button");
+					boxA6.className = "colorA";
+					boxA6.style.left = "20px";
+				var boxA7 = document.createElement("button");
+					boxA7.className = "colorA";
+					boxA7.style.left = "30px";
+
 			var drawScene1 = function() {
-				currentScene = 1;
-					gameBox.appendChild(gameTitle);
-					gameBox.appendChild(startBtn);
+				gameBox.appendChild(gameTitle);
+				gameBox.appendChild(startBtn);
 			};
 
 			drawScene1();
 
+			drawIncorrectScreenA = function() {
+				instruct.remove();
+				boxA1.remove();
+				boxA2.remove();
+				boxA3.remove();
+				boxA4.remove();
+				boxA5.remove();
+				boxA6.remove();
+				boxA7.remove();
+
+				gameBox.style.backgroundColor = "red";
+			};
+
+			drawAnswerA = function() {
+				instruct.remove();
+				boxA1.remove();
+				boxA2.remove();
+				boxA3.remove();
+				boxA4.remove();
+				boxA5.remove();
+				boxA6.remove();
+				boxA7.remove();
+
+				gameBox.style.backgroundColor = "green";
+			};
+
 			var drawScene2 = function() {
-				currentScene = 2;
-				gameBox.removeAttribute(gameTitle);
-				gameBox.removeAttribute(startBtn);
-				gameBox.style.backgroundColor = "blue";
+				gameTitle.remove();
+				startBtn.remove();
+
+				gameBox.appendChild(instruct)
+				gameBox.appendChild(boxA1);
+				gameBox.appendChild(boxA2);
+				gameBox.appendChild(boxA3);
+				gameBox.appendChild(boxA4);
+				gameBox.appendChild(boxA5);
+				gameBox.appendChild(boxA6);
+				gameBox.appendChild(boxA7);
 			};
 
 			startBtn.addEventListener("click", drawScene2);
+			boxA1.addEventListener("click", drawIncorrectScreenA)
+			boxA2.addEventListener("click", drawIncorrectScreenA)
+			boxA3.addEventListener("click", drawIncorrectScreenA)
+			boxA4.addEventListener("click", drawIncorrectScreenA)
+			boxA5.addEventListener("click", drawAnswerA)
+			boxA6.addEventListener("click", drawIncorrectScreenA)
+			boxA7.addEventListener("click", drawIncorrectScreenA)
 
 		</script>
 	</body>
