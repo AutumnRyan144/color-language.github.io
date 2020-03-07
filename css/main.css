@@ -241,6 +241,10 @@
 		cursor:pointer;
 	}
 
+	button:hover {
+		cursor:pointer;
+	}
+
 	.embedbox {
 		margin-top:5%;
 		text-align:center;
